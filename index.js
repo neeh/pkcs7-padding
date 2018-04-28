@@ -1,7 +1,7 @@
 var DEF_PAD_LENGTH = 16;
 
 /**
- * Append PKCS#7 padding to an buffer or a string.
+ * Append PKCS#7 padding to a buffer or a string.
  *
  * @see {@link http://tools.ietf.org/html/rfc5652|RFC 5652 section 6.3}
  *
@@ -42,7 +42,7 @@ function pad(data, size) {
 }
 
 /**
- * Remove the PKCS#7 padding from an buffer or a string.
+ * Remove the PKCS#7 padding from a buffer or a string.
  *
  * @see {@link http://tools.ietf.org/html/rfc5652|RFC 5652 section 6.3}
  *
