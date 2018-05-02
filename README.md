@@ -45,7 +45,7 @@ var raw = pkcs7.unpad(padded);
 
 You have the ability to change the block size of the padded data.<br>
 The default block size is set to **16 bytes**.<br>
-The maximum block size if 255 bytes.
+The maximum block size is 255 bytes.
 
 ```
 var pkcs7 = require('pkcs7-padding');
