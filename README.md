@@ -10,7 +10,7 @@ See [RFC 5652, section 6.3](https://tools.ietf.org/html/rfc5652#section-6.3) for
 
 ## Basic usage
 
-```
+```javascript
 var pkcs7 = require('pkcs7-padding');
 
 // padding
@@ -23,7 +23,7 @@ var raw = pkcs7.unpad(padded);
 
 Note that `unpad()` throws an error when the padded data is incorrect :
 
-```
+```javascript
 try {
   var raw = pkcs7.unpad(data);
   // use raw data
@@ -34,7 +34,7 @@ try {
 
 It works with **strings** as well :
 
-```
+```javascript
 var pkcs7 = require('pkcs7-padding');
 
 var padded = pkcs7.pad('this is a text');
@@ -47,7 +47,7 @@ You have the ability to change the block size of the padded data.<br>
 The default block size is set to **16 bytes**.<br>
 The maximum block size is 255 bytes.
 
-```
+```javascript
 var pkcs7 = require('pkcs7-padding');
 
 var data = new Uint8Array(14);
